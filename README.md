@@ -1,2 +1,2 @@
 # KoperasiRuge
-Koperasi Ruge made with Laravel
+Koperasi Ruge made with Laravel Framework & Tailwind CSS
