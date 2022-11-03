@@ -42,9 +42,9 @@ class pinjamanController extends Controller
         //
         $request->validate(
             [
-                'idPinjam' => 'required',
+                'idPinjam' => 'required|unique:pinjamen,idPinjam',
                 'tanggal' => 'required',
-                'noAnggota' => 'required',
+                'noAnggota' => 'required|exists:anggotas,noAnggota',
                 'jumlah' => 'required',
                 'lama' => 'required',
                 'bunga' => 'required',

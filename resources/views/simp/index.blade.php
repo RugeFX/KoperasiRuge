@@ -146,7 +146,7 @@
                           transition
                           ease-in-out
                           m-0
-                          focus:text-gray-700 focus:bg-white focus:border-green-600 focus:outline-none" id="jumlahform"
+                          focus:text-gray-700 focus:bg-white focus:border-green-600 focus:outline-none" id="jumlah"
                           aria-describedby="jumlah" placeholder="Insert Jumlah" name="jumlah">
                     </div>
                     

@@ -41,7 +41,7 @@ class anggotaController extends Controller
         //
         $request->validate(
             [
-                'noAnggota' => 'required',
+                'noAnggota' => 'required|unique:anggotas,noAnggota',
                 'namaAnggota' => 'required',
                 'jKelamin' => 'required',
                 'tempatLahir' => 'required',

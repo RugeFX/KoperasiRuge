@@ -51,10 +51,10 @@ class simpananController extends Controller
         //
         $request->validate(
             [
-                'idSimpanan' => 'required',
+                'idSimpanan' => 'required|unique:simpanans,idSimpanan',
                 'tanggal' => 'required',
-                'noAnggota' => 'required',
-                'idJenis' => 'required',
+                'noAnggota' => 'required|exists:anggotas,noAnggota',
+                'idJenis' => 'required|exists:jenis_simpanans,idJenis',
                 'jumlah' => 'required',
                 'userId',
             ]
